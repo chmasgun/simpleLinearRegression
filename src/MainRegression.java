@@ -137,7 +137,7 @@ public class MainRegression {
 		
 	}
 	private static double pValue(double input,double mean, double variance){
-		return (CDF(input,mean,variance)-0.5)/Math.sqrt(variance);
+		return (input-mean)/Math.sqrt(variance);
 		//return 1-2*Math.abs(0.5-CDF(input,mean,variance));
 	}
 }
